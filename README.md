@@ -4,6 +4,8 @@ Binary framework version of ObjectiveRocks for iOS and macOS to save time buildi
 
 ## Instructions
 
+**Note**: versions of this pod should *always* match [the version in the main ObjectiveRocks repo](https://github.com/iabudiab/ObjectiveRocks/blob/develop/ObjectiveRocks.podspec).
+
 1. Clone [Keepsafe's fork of the ObjectiveRocks repo](https://github.com/KeepSafe/ObjectiveRocks) and switch to the `frameworks` branch
 2. From that repo, run `$ ./build_universal_framework.sh`
 3. Upload the resulting zip file to this repo's release page as a new release (or overwrite an existing release if the release # hasn't changed)
