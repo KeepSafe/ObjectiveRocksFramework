@@ -9,8 +9,6 @@ Pod::Spec.new do |s|
     s.requires_arc      = true
     s.ios.deployment_target = '9.0'
     s.ios.vendored_frameworks = 'iOS/ObjectiveRocks.framework'
-    s.osx.deployment_target = '10.10'
-    s.osx.vendored_frameworks = 'macOS/ObjectiveRocks.framework'
     
     #### CONFIGS
 
@@ -24,10 +22,6 @@ Pod::Spec.new do |s|
     }
     s.pod_target_xcconfig = shared_xcconfig.merge(framework_shared_xconfig)
     s.user_target_xcconfig = shared_xcconfig
-
-    shared_osx_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ROCKSDB_USING_THREAD_STATUS=1' }
-    s.osx.pod_target_xcconfig = shared_osx_xcconfig
-    s.osx.user_target_xcconfig = shared_osx_xcconfig
 
     shared_ios_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ROCKSDB_LITE=1 IOS_CROSS_COMPILE=1 NROCKSDB_THREAD_STATUS=1' }
     s.ios.pod_target_xcconfig = shared_ios_xcconfig
