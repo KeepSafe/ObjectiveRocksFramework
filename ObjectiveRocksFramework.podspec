@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
       'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/rocksdb_src/rocksdb"',
       'GCC_INPUT_FILETYPE' => 'sourcecode.cpp.objcpp',
       'GCC_C_LANGUAGE_STANDARD' => 'gnu99',
-      'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11'
+      'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
+      'VALID_ARCHS' => 'arm64 armv7 x86_64'
     }
     s.pod_target_xcconfig = shared_xcconfig.merge(framework_shared_xconfig)
     s.user_target_xcconfig = shared_xcconfig
