@@ -1,6 +1,6 @@
 # ObjectiveRocksFramework
 
-Binary framework version of ObjectiveRocks for iOS and macOS to save time building code from scratch each run.
+Binary framework version of ObjectiveRocks for iOS to save time building code from scratch each run.
 
 ## Instructions
 
