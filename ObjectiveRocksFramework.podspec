@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.source            = { :http => "https://github.com/KeepSafe/ObjectiveRocksFramework/releases/download/v#{s.version.to_s}/ObjectiveRocks.zip" }
     s.requires_arc      = true
     s.ios.deployment_target = '9.0'
-    s.ios.vendored_frameworks = 'iOS/ObjectiveRocks.framework'
+    s.ios.vendored_frameworks = 'iOS/ObjectiveRocks.xcframework'
     
     #### CONFIGS
 
