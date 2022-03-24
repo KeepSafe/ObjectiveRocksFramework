@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'ObjectiveRocksFramework'
-    s.version           = '0.9.0.3'
+    s.version           = '0.9.0.5'
     s.summary           = 'An Objective-C wrapper for RocksDB - A Persistent Key-Value Store for Flash and RAM Storage.'
     s.homepage          = 'https://github.com/KeepSafe/ObjectiveRocks/tree/frameworks'
     s.author            = 'iabudiab'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
       'GCC_INPUT_FILETYPE' => 'sourcecode.cpp.objcpp',
       'GCC_C_LANGUAGE_STANDARD' => 'gnu99',
       'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
-      'VALID_ARCHS' => 'arm64 armv7 x86_64'
+      'VALID_ARCHS' => 'arm64 x86_64'
     }
     s.pod_target_xcconfig = shared_xcconfig.merge(framework_shared_xconfig)
     s.user_target_xcconfig = shared_xcconfig
